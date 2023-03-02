@@ -40,22 +40,19 @@ $(document).ready(function ($) {
     $("body").addClass("show-panel");
     modalchik.addClass("active_");
     modalchik.addClass("show-it");
-  }, 10000);
-
-  $("body").on("click", function () {
-    modalchik.removeClass("active_");
-    clearTimeout(timeout);
-  });
+  }, 30000);
   $(window).on("beforeunload", function () {
-    modalchik.removeClass("active_");
+    modalchik.addClass("active_");
     clearTimeout(timeout);
   });
-  $(window).on("click", function (event) {
-    if (event.target == modal[0]) {
+
+  $(".backdrop, .modal .close, .close-panel").on("click", function () {
+    if (modalchik.hasClass("active_")) {
       modalchik.removeClass("active_");
       clearTimeout(timeout);
     }
   });
+
   $(".backdrop, .modal-backdrop, .modal .close, .close-panel").on(
     "click",
     function (e) {

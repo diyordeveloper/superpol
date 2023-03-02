@@ -38,16 +38,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #000000e3;
-  z-index: 99;
+  z-index: 99999;
   border-radius: 8px;
   width: 600px;
   overflow: hidden;
   opacity: 0;
+  display: none;
 }
 .side_modal.active_ {
   animation: anim 1.5s ease;
   overflow: visible;
   opacity: 1;
+  display: block;
 }
 .side_modal .img__ {
   border-radius: 8px;
