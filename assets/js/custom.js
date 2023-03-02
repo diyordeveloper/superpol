@@ -40,7 +40,8 @@ $(document).ready(function ($) {
     $("body").addClass("show-panel");
     modalchik.addClass("active_");
     modalchik.addClass("show-it");
-  }, 30000);
+  }, 100000);
+  // 100000
   $(window).on("beforeunload", function () {
     modalchik.addClass("active_");
     clearTimeout(timeout);
