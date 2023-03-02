@@ -137,6 +137,11 @@ $(document).ready(function ($) {
     });
   }
 
+
+
+
+
+  
   //  Form Validation
   //   $("#form-contact").submit(function (e) {
   //     e.preventDefault();
@@ -156,22 +161,22 @@ $(document).ready(function ($) {
   //       },
   //     });
   //   });
-  $(".form .btn[type='submit']").on("click", function () {
-    var button = $(this);
-    var form = $(this).closest("form");
-    setTimeout('location.replace("/thank.html")', 500);
-    //   console.log(form);
-    //   button.prepend("<div class='status'></div>");
-    //   form.validate({
-    //       submitHandler: function() {
-    //           $.post("xidirovdiyorbek6@gmail.com", form.serialize(),  function(response) {
-    //               button.find(".status").append(response);
-    //               form.addClass("submitted");
-    //           });
-    //           return false;
-    //       }
-    //   });
-  });
+  // $(".form .btn[type='submit']").on("click", function () {
+  //   var button = $(this);
+  //   var form = $(this).closest("form");
+  //   setTimeout('location.replace("/thank.html")', 500);
+  //   //   console.log(form);
+  //   //   button.prepend("<div class='status'></div>");
+  //   //   form.validate({
+  //   //       submitHandler: function() {
+  //   //           $.post("xidirovdiyorbek6@gmail.com", form.serialize(),  function(response) {
+  //   //               button.find(".status").append(response);
+  //   //               form.addClass("submitted");
+  //   //           });
+  //   //           return false;
+  //   //       }
+  //   //   });
+  // });
 
   $(".bg-transfer").each(function () {
     $(this).css(
