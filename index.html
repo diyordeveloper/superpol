@@ -36,6 +36,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/modalStyle.css" type="text/css" />
 
     <link rel="icon" href="./assets/img/logo_white.png" type="image/x-icon" />
 
@@ -45,7 +46,7 @@
     </title>
   </head>
 
-  <body class="frame">
+  <body class="frame  ">
     <div id="outer-wrapper" class="animate translate-z-in">
       <div id="inner-wrapper">
         <div id="table-wrapper" class="center">
@@ -145,6 +146,69 @@
       </div>
       <!--end inner-wrapper-->
     </div>
+
+<!-- modal --------------------------------- -->
+
+
+
+<div class="side_modal  modalchik" id="modal_">
+  <!-- <div class="close-panel"><i class="fa fa-chevron-left"></i></div> -->
+  <div class="wrapper">
+    <div>
+      <img src="./assets/img/modal_Img.jpg"  class=" img__" alt="Error!!!"> 
+      <div class="card_">
+        <h3  >Оставьте заявку и мы свяжемся с вами в течении 10 минут</h3>
+        
+      <form  
+        id="form_uslug" 
+      >
+        <div class="row">
+          <div class="col-md-9 col-sm-12">
+            <div class="form-group">
+              <input
+                type="phone"
+                class="form-control radius_"
+                id="phone_uslug"
+                name="phone"
+                placeholder="+7 (___) ___-____"
+                
+              />
+            </div>
+          </div>
+          <!--end col-md-6 col-sm-6 -->
+          <div class="col-md-3 col-sm-12">
+            <div class="form-group clearfix">
+              <button 
+              type="submit"
+                class="btn pull-right btn-default btn-framed btn-rounded btn_full_"
+                id="form-contact-submit"
+              >
+                Отправить
+              </button>
+            </div>
+            <!--end form-group -->
+          </div>
+          <!--end col-md-6 col-sm-6 -->
+        </div>
+        <!--end row -->
+
+        <!--end form-group -->
+        <div class="form-contact-status"></div>
+      </form>
+      </div>
+      <!--end form-contact -->
+    </div>
+    <!--end tse-scrollable-->
+  </div>
+  <!--end wrapper-->
+</div>
+
+<!-- modalEnd-------------------------------------- -->
+
+
+
+
+
     <!--end outer-wrapper-->
 
     <audio id="chatAudio">

@@ -10,9 +10,9 @@ $(document).ready(function ($) {
   if ($(".tse-scrollable").length) {
     $(".tse-scrollable").TrackpadScrollEmulator();
   }
-  jQuery(function($){
-    $("input[type='phone']").mask("+7 (999) 999-9999" );
- });
+  jQuery(function ($) {
+    $("input[type='phone']").mask("+7 (999) 999-9999");
+  });
   $(".open-side-panel, [data-toggle=modal]").on("click", function (e) {
     e.preventDefault();
     $("body").addClass("show-panel");
@@ -34,6 +34,28 @@ $(document).ready(function ($) {
     }
   });
 
+  var modalchik = $(".modalchik");
+  var timeout;
+  timeout = setTimeout(function () {
+    $("body").addClass("show-panel");
+    modalchik.addClass("active_");
+    modalchik.addClass("show-it");
+  }, 10000);
+
+  $("body").on("click", function () {
+    modalchik.removeClass("active_");
+    clearTimeout(timeout);
+  });
+  $(window).on("beforeunload", function () {
+    modalchik.removeClass("active_");
+    clearTimeout(timeout);
+  });
+  $(window).on("click", function (event) {
+    if (event.target == modal[0]) {
+      modalchik.removeClass("active_");
+      clearTimeout(timeout);
+    }
+  });
   $(".backdrop, .modal-backdrop, .modal .close, .close-panel").on(
     "click",
     function (e) {
@@ -41,6 +63,8 @@ $(document).ready(function ($) {
       if ($("body").hasClass("show-panel")) {
         $("body").removeClass("show-panel");
         openedSidePanel.removeClass("show-it");
+        modalchik.removeClass("active_");
+        modalchik.removeClass("show-it");
       }
     }
   );
@@ -137,11 +161,6 @@ $(document).ready(function ($) {
     });
   }
 
-
-
-
-
-  
   //  Form Validation
   //   $("#form-contact").submit(function (e) {
   //     e.preventDefault();

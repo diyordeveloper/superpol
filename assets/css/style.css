@@ -152,14 +152,14 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media  (max-width:500px) {
-  .tel_zayavku a{
+@media (max-width: 500px) {
+  .tel_zayavku a {
     width: 100%;
   }
-  .tel_zayavku a:nth-child(2){
+  .tel_zayavku a:nth-child(2) {
     margin-top: 10px;
   }
-  .btn_full_{
+  .btn_full_ {
     width: 100%;
   }
 }
@@ -1631,6 +1631,7 @@ body.has-active-slider #outer-wrapper #inner-wrapper {
   height: 100%;
   z-index: 99;
 }
+
 .side-panel:before {
   -moz-transform: rotate(8deg) scale(1.2);
   -ms-transform: rotate(8deg) scale(1.2);
