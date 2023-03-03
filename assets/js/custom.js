@@ -11,7 +11,7 @@ $(document).ready(function ($) {
     $(".tse-scrollable").TrackpadScrollEmulator();
   }
   jQuery(function ($) {
-    $("input[type='phone']").mask("+7 (999) 999-9999");
+    $("input[type='phone']").mask("+7 (999) 999-99-99");
   });
   $(".open-side-panel, [data-toggle=modal]").on("click", function (e) {
     e.preventDefault();
